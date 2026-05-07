@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valery Lipin — Personal Trainer | Phuket</title>
+<meta name="description" content="Certified Personal Trainer and Sports Nutritionist available for hire in Phuket, Thailand. Seeking employment with work permit Non-B visa sponsorship.">
+<meta property="og:title" content="Valery Lipin — Personal Trainer Phuket">
+<meta property="og:description" content="Certified Personal Trainer seeking position in premium fitness clubs in Phuket. Non-B visa sponsorship required.">
+<link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,900&f[]=cabinet-grotesk@400,500,700,800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root,[data-theme="dark"]{
+  --bg:#0d0c0a;--surf:#141311;--surf2:#1a1916;--surfoff:#201f1b;--surfdyn:#2a2925;
+  --div:#2d2c27;--brd:#35342e;--txt:#e8e5dc;--txtm:#8a8880;--txtf:#56544e;--txti:#0d0c0a;
+  --gold:#c9a84c;--goldh:#e2bf6a;--teal:#2ec4b6;--tealh:#1aa89b;
+  --s1:.25rem;--s2:.5rem;--s3:.75rem;--s4:1rem;--s5:1.25rem;--s6:1.5rem;
+  --s8:2rem;--s10:2.5rem;--s12:3rem;--s16:4rem;--s20:5rem;--s24:6rem;
+  --xs:clamp(.75rem,.7rem + .25vw,.875rem);--sm:clamp(.875rem,.8rem + .35vw,1rem);
+  --base:clamp(1rem,.95rem + .25vw,1.125rem);--lg:clamp(1.125rem,1rem + .75vw,1.5rem);
+  --xl:clamp(1.5rem,1.2rem + 1.25vw,2.25rem);--2xl:clamp(2rem,1.2rem + 2.5vw,3.5rem);
+  --hero:clamp(3rem,.5rem + 7vw,7rem);
+  --fd:"Cabinet Grotesk",sans-serif;--fb:"Satoshi",sans-serif;--fth:"Noto Sans Thai","Satoshi",sans-serif;
+  --tr:180ms cubic-bezier(.16,1,.3,1);
+  --r4:.25rem;--r6:.375rem;--r8:.5rem;--r12:.75rem;--r16:1rem;--rfull:9999px;
+  --shsm:0 1px 3px oklch(0 0 0/.3);--shmd:0 4px 16px oklch(0 0 0/.4);--shlg:0 16px 48px oklch(0 0 0/.5);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-font-smoothing:antialiased;scroll-behavior:smooth;scroll-padding-top:76px}
+body{min-height:100dvh;line-height:1.6;font-family:var(--fb);font-size:var(--base);color:var(--txt);background:var(--bg)}
+img,picture{display:block;max-width:100%;height:auto}
+h1,h2,h3,h4{text-wrap:balance;line-height:1.15;font-family:var(--fd)}
+p,li{text-wrap:pretty;max-width:72ch}
+button{cursor:pointer;background:none;border:none;font:inherit;color:inherit}
+a{color:inherit;text-decoration:none}
+::selection{background:oklch(from var(--gold) l c h/.25);color:var(--txt)}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:var(--r6)}
+
+/* Layout */
+.wrap{max-width:1200px;margin-inline:auto;padding-inline:var(--s6)}
+section{padding-block:clamp(var(--s16),8vw,var(--s24))}
+.alt{background:var(--surf)}
+
+/* Header */
+header{position:fixed;top:0;left:0;right:0;z-index:100;background:oklch(from #0d0c0a l c h/.94);backdrop-filter:blur(20px);border-bottom:1px solid var(--div)}
+nav{max-width:1200px;margin-inline:auto;padding:var(--s4) var(--s6);display:flex;align-items:center;justify-content:space-between;gap:var(--s4)}
+.logo{display:flex;align-items:center;gap:var(--s3);font-family:var(--fd);font-size:var(--sm);font-weight:700;color:var(--gold);letter-spacing:.04em;text-transform:uppercase;flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:var(--s5);list-style:none}
+.nav-links a{font-size:var(--sm);color:var(--txtm);transition:color var(--tr)}
+.nav-links a:hover,.nav-links a.cur{color:var(--txt)}
+.lang-sw{display:flex;gap:var(--s2)}
+.lb{padding:var(--s1) var(--s3);border-radius:var(--rfull);font-size:var(--xs);font-weight:700;color:var(--txtm);border:1px solid var(--brd);transition:all var(--tr);background:none}
+.lb.on{background:var(--gold);color:var(--txti);border-color:var(--gold)}
+.lb:hover:not(.on){color:var(--txt);border-color:var(--txtm)}
+.mob-toggle{display:none;padding:var(--s2);color:var(--txt)}
+@media(max-width:800px){
+  .nav-links{display:none;position:absolute;top:100%;left:0;right:0;background:var(--surf);flex-direction:column;align-items:flex-start;padding:var(--s4) var(--s6);border-bottom:1px solid var(--div);gap:var(--s4);z-index:99}
+  .nav-links.open{display:flex}
+  .mob-toggle{display:flex}
+}
+
+/* Hero */
+.hero{min-height:100dvh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:var(--s12);padding-top:76px;position:relative;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse 80% 90% at 60% 50%,oklch(.14 .03 80/.5) 0%,transparent 70%);pointer-events:none}
+.hc{position:relative;z-index:2;padding-block:var(--s16)}
+.eye{display:flex;align-items:center;gap:var(--s3);margin-bottom:var(--s6);font-size:var(--xs);font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--gold)}
+.eye::before{content:"";display:block;width:32px;height:2px;background:var(--gold);flex-shrink:0}
+.hero h1{font-size:var(--hero);font-weight:900;line-height:1;margin-bottom:var(--s6);color:var(--txt)}
+.hero h1 em{font-style:normal;color:var(--gold)}
+.hsub{font-size:var(--lg);color:var(--txtm);margin-bottom:var(--s10);line-height:1.5;max-width:46ch}
+.hctas{display:flex;gap:var(--s4);flex-wrap:wrap;margin-bottom:var(--s10)}
+.stats{display:flex;gap:var(--s10)}
+.stat-n{font-family:var(--fd);font-size:var(--xl);font-weight:900;color:var(--gold)}
+.stat-l{font-size:var(--xs);color:var(--txtm);text-transform:uppercase;letter-spacing:.08em}
+.hi{position:relative;z-index:2;display:flex;justify-content:flex-end}
+.hi img{width:100%;max-width:500px;height:85vh;max-height:680px;object-fit:cover;object-position:top center;border-radius:var(--r16);box-shadow:var(--shlg)}
+@media(max-width:900px){
+  .hero{grid-template-columns:1fr;text-align:center;padding-top:76px}
+  .eye{justify-content:center}
+  .hctas{justify-content:center}
+  .stats{justify-content:center}
+  .hi{justify-content:center}
+  .hi img{max-height:420px;max-width:100%}
+}
+
+/* Buttons */
+.btn-p{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s4) var(--s8);background:var(--teal);color:#0d0c0a;border-radius:var(--r8);font-size:var(--sm);font-weight:700;transition:all var(--tr);box-shadow:0 4px 24px oklch(from var(--teal) l c h/.3)}
+.btn-p:hover{background:var(--tealh);transform:translateY(-2px);box-shadow:0 8px 32px oklch(from var(--teal) l c h/.4)}
+.btn-s{display:inline-flex;align-items:center;gap:var(--s2);padding:var(--s4) var(--s8);border:1.5px solid var(--brd);border-radius:var(--r8);font-size:var(--sm);font-weight:600;color:var(--txtm);transition:all var(--tr)}
+.btn-s:hover{border-color:var(--gold);color:var(--gold)}
+
+/* Section headers */
+.ey{font-size:var(--xs);font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--gold);margin-bottom:var(--s4)}
+.st{font-size:var(--2xl);font-weight:900;margin-bottom:var(--s6);color:var(--txt)}
+.sb{font-size:var(--base);color:var(--txtm);line-height:1.8;margin-bottom:var(--s6)}
+
+/* About */
+.ag{display:grid;grid-template-columns:1fr 1fr;gap:var(--s16);align-items:start}
+.aimg{position:relative}
+.aimg img{width:100%;border-radius:var(--r16);object-fit:cover;height:480px;box-shadow:var(--shmd)}
+.abadge{position:absolute;bottom:calc(var(--s6)*-1);right:calc(var(--s6)*-1);background:var(--gold);color:var(--txti);border-radius:var(--r12);padding:var(--s5) var(--s6);text-align:center;box-shadow:var(--shmd)}
+.abn{font-family:var(--fd);font-size:var(--2xl);font-weight:900;line-height:1;margin-bottom:var(--s1)}
+.abl{font-size:var(--xs);font-weight:600;text-transform:uppercase;letter-spacing:.08em;max-width:8ch;line-height:1.3}
+.tags{display:flex;flex-wrap:wrap;gap:var(--s2);margin-bottom:var(--s8)}
+.tag{padding:var(--s2) var(--s4);background:var(--surfoff);border:1px solid var(--brd);border-radius:var(--rfull);font-size:var(--xs);font-weight:600;color:var(--txtm);text-transform:uppercase;letter-spacing:.06em}
+@media(max-width:768px){.ag{grid-template-columns:1fr}.abadge{bottom:var(--s3);right:var(--s3)}}
+
+/* Services */
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s6)}
+.sc{background:var(--surf2);border:1px solid var(--brd);border-radius:var(--r16);padding:var(--s8);transition:all var(--tr)}
+.sc:hover{border-color:var(--gold);box-shadow:var(--shmd);transform:translateY(-4px)}
+.si{width:52px;height:52px;background:color-mix(in oklch,var(--gold) 15%,var(--surfoff));border-radius:var(--r12);display:flex;align-items:center;justify-content:center;margin-bottom:var(--s5);font-size:26px}
+.sc h3{font-size:var(--lg);font-weight:800;margin-bottom:var(--s3);color:var(--txt)}
+.sc p{font-size:var(--sm);color:var(--txtm);line-height:1.7}
+@media(max-width:900px){.sg{grid-template-columns:1fr}}
+
+/* Certs */
+.cg{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s6);margin-bottom:var(--s12)}
+.cc{background:var(--surf);border:1px solid var(--brd);border-radius:var(--r16);overflow:hidden;transition:all var(--tr)}
+.cc:hover{border-color:var(--gold);box-shadow:var(--shmd)}
+.ciw{height:210px;overflow:hidden;background:var(--surf2)}
+.ciw img{width:100%;height:100%;object-fit:cover;object-position:top;transition:transform .4s ease}
+.cc:hover .ciw img{transform:scale(1.04)}
+.ci{padding:var(--s5)}
+.cbadge{display:inline-block;padding:var(--s1) var(--s3);background:color-mix(in oklch,var(--gold) 15%,var(--surfoff));color:var(--gold);border-radius:var(--rfull);font-size:var(--xs);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--s3)}
+.ct{font-size:var(--base);font-weight:700;margin-bottom:var(--s2);color:var(--txt)}
+.ciss{font-size:var(--xs);color:var(--txtm)}
+.cdt{font-size:var(--xs);color:var(--txtf);margin-top:var(--s1)}
+@media(max-width:768px){.cg{grid-template-columns:1fr}}
+
+/* Work */
+.wg{display:grid;grid-template-columns:1fr 1fr;gap:var(--s8);align-items:start}
+.tl{display:flex;flex-direction:column;gap:var(--s6);margin-top:var(--s10)}
+.tli{display:grid;grid-template-columns:auto 1fr;gap:var(--s5)}
+.tlm{display:flex;flex-direction:column;align-items:center}
+.tld{width:14px;height:14px;border-radius:50%;background:var(--gold);border:2px solid var(--bg);flex-shrink:0}
+.tll{width:2px;flex:1;min-height:50px;background:var(--div);margin-top:var(--s2)}
+.tldate{font-size:var(--xs);color:var(--gold);font-weight:700;text-transform:uppercase;letter-spacing:.08em;margin-bottom:var(--s1)}
+.tlrole{font-size:var(--base);font-weight:700;color:var(--txt);margin-bottom:var(--s1)}
+.tlco{font-size:var(--sm);color:var(--txtm);margin-bottom:var(--s3)}
+.tldesc{font-size:var(--sm);color:var(--txtf);line-height:1.7}
+.wphoto{border-radius:var(--r16);overflow:hidden;box-shadow:var(--shlg)}
+.wphoto img{width:100%;height:480px;object-fit:cover}
+@media(max-width:768px){.wg{grid-template-columns:1fr}.wphoto{display:none}}
+
+/* Visa */
+.vi{display:grid;grid-template-columns:1fr 1fr;gap:var(--s12);align-items:start}
+.vcl{list-style:none;display:flex;flex-direction:column;gap:var(--s4);margin-top:var(--s8)}
+.vcl li{display:flex;align-items:flex-start;gap:var(--s3);font-size:var(--sm);color:var(--txtm)}
+.chk{width:22px;height:22px;background:var(--gold);color:var(--txti);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:11px;font-weight:900;margin-top:1px}
+.vh{background:var(--surfoff);border:1px solid var(--brd);border-radius:var(--r16);padding:var(--s8)}
+.vht{font-family:var(--fd);font-size:var(--xl);font-weight:900;color:var(--gold);margin-bottom:var(--s2)}
+.vhs{font-size:var(--sm);color:var(--txtm);margin-bottom:var(--s6);line-height:1.7}
+.vhl{list-style:none;display:flex;flex-direction:column;gap:var(--s3)}
+.vhl li{font-size:var(--sm);color:var(--txtm);padding-left:var(--s5);position:relative}
+.vhl li::before{content:"→";position:absolute;left:0;color:var(--gold);font-weight:700}
+@media(max-width:768px){.vi{grid-template-columns:1fr}}
+
+/* Contact */
+.cog{display:grid;grid-template-columns:1fr 1fr;gap:var(--s12);align-items:start}
+.coin{display:flex;align-items:flex-start;gap:var(--s4);margin-bottom:var(--s6)}
+.coic{width:44px;height:44px;background:color-mix(in oklch,var(--gold) 15%,var(--surfoff));border-radius:var(--r12);display:flex;align-items:center;justify-content:center;font-size:20px;flex-shrink:0}
+.colk{font-size:var(--xs);color:var(--txtf);text-transform:uppercase;letter-spacing:.1em;margin-bottom:var(--s1)}
+.colv{font-size:var(--sm);font-weight:600;color:var(--txt)}
+.cfn{background:var(--surfoff);border:1px solid var(--brd);border-radius:var(--r16);padding:var(--s8)}
+@media(max-width:768px){.cog{grid-template-columns:1fr}}
+
+/* Footer */
+footer{background:var(--bg);border-top:1px solid var(--div);padding:var(--s8) 0}
+.fi{max-width:1200px;margin-inline:auto;padding-inline:var(--s6);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:var(--s4)}
+.fc{font-size:var(--xs);color:var(--txtf)}
+
+/* Lang visibility */
+[data-l]{display:none}
+[data-l].on{display:block}
+[data-li]{display:none}
+[data-li].on{display:inline}
+.th-f{font-family:var(--fth)}
+</style>
+</head>
+<body>
+<a href="#main" style="position:absolute;top:-40px;left:0;background:var(--gold);color:#000;padding:8px 16px;z-index:200;border-radius:0 0 8px 0;transition:top .2s" onfocus="this.style.top='0'">Skip to content</a>
+
+<header>
+<nav>
+  <div class="logo">
+    <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-label="VL">
+      <rect width="28" height="28" rx="6" fill="currentColor" opacity=".15"/>
+      <path d="M7 8L12 20L14 14L16 20L21 8" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span>Valery Lipin</span>
+  </div>
+  <button class="mob-toggle" id="mt" aria-label="Menu" aria-expanded="false">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+  </button>
+  <ul class="nav-links" id="nl" role="list">
+    <li><a href="#about" data-n="about"><span data-l="en" class="on">About</span><span data-l="ru">О себе</span><span data-l="th" class="th-f">เกี่ยวกับ</span></a></li>
+    <li><a href="#services" data-n="services"><span data-l="en" class="on">Services</span><span data-l="ru">Услуги</span><span data-l="th" class="th-f">บริการ</span></a></li>
+    <li><a href="#credentials" data-n="credentials"><span data-l="en" class="on">Credentials</span><span data-l="ru">Документы</span><span data-l="th" class="th-f">ใบรับรอง</span></a></li>
+    <li><a href="#work" data-n="work"><span data-l="en" class="on">Experience</span><span data-l="ru">Опыт</span><span data-l="th" class="th-f">ประสบการณ์</span></a></li>
+    <li><a href="#visa" data-n="visa"><span data-l="en" class="on">Visa Info</span><span data-l="ru">Виза</span><span data-l="th" class="th-f">วีซ่า</span></a></li>
+    <li><a href="#contact" data-n="contact"><span data-l="en" class="on">Contact</span><span data-l="ru">Контакт</span><span data-l="th" class="th-f">ติดต่อ</span></a></li>
+  </ul>
+  <div class="lang-sw">
+    <button class="lb on" onclick="setL('en')">EN</button>
+    <button class="lb" onclick="setL('ru')">RU</button>
+    <button class="lb" onclick="setL('th')">TH</button>
+  </div>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero wrap">
+  <div class="hc">
+    <div class="eye"><span data-l="en" class="on">Personal Trainer &amp; Sports Nutritionist</span><span data-l="ru">Персональный тренер и нутрициолог</span><span data-l="th" class="th-f">เทรนเนอร์ส่วนตัว &amp; นักโภชนาการกีฬา</span></div>
+    <h1><span data-l="en" class="on">Valery<br><em>Lipin</em></span><span data-l="ru">Валерий<br><em>Липин</em></span><span data-l="th" class="th-f">วาเลรี่<br><em>ลิปิน</em></span></h1>
+    <p class="hsub"><span data-l="en" class="on">Certified Fitness Trainer &amp; Sports Nutritionist residing in Phuket, Thailand. Available for full-time positions at premium fitness clubs with Non-B visa &amp; work permit sponsorship.</span><span data-l="ru">Сертифицированный тренер по фитнесу и спортивный нутрициолог, проживающий на Пхукете. Ищу постоянную позицию в премиальном клубе с оформлением визы Non-B и Work Permit.</span><span data-l="th" class="th-f">เทรนเนอร์ฟิตเนสและนักโภชนาการกีฬาที่ผ่านการรับรอง กำลังพักอาศัยอยู่ที่ภูเก็ต พร้อมทำงานเต็มเวลาในคลับระดับพรีเมียม ต้องการวีซ่า Non-B และใบอนุญาตทำงาน</span></p>
+    <div class="hctas">
+      <a href="https://019e02ab-c36b-7bc9-a163-0e7cd415daa9.claudeusercontent.com/v1/design/projects/019e02ab-c36b-7bc9-a163-0e7cd415daa9/serve/index.html?t=d40e058388b2f35b977edcd55366a32bc56949866b92428ee97c354d03841a74.af51a170-dfd5-4739-b6d6-198ab2e45306.c7000ccb-ee4e-4e20-8e28-adcfe08e3780.1778181748&srcmap=1#contact" class="btn-p" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 014.07 11.5 19.79 19.79 0 011.09 2.18 2 2 0 013.07 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L7.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0121 14.92z"/></svg><span data-l="en" class="on">Contact</span><span data-l="ru">Связаться</span><span data-l="th" class="th-f">ติดต่อ</span></a>
+      <a href="https://019e02ab-c36b-7bc9-a163-0e7cd415daa9.claudeusercontent.com/v1/design/projects/019e02ab-c36b-7bc9-a163-0e7cd415daa9/serve/index.html?t=d40e058388b2f35b977edcd55366a32bc56949866b92428ee97c354d03841a74.af51a170-dfd5-4739-b6d6-198ab2e45306.c7000ccb-ee4e-4e20-8e28-adcfe08e3780.1778181748&srcmap=1#cv" class="btn-s" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg><span data-l="en" class="on">Download CV</span><span data-l="ru">Скачать CV</span><span data-l="th" class="th-f">ดาวน์โหลด CV</span></a>
+      <a href="https://019e02ab-c36b-7bc9-a163-0e7cd415daa9.claudeusercontent.com/v1/design/projects/019e02ab-c36b-7bc9-a163-0e7cd415daa9/serve/index.html?t=d40e058388b2f35b977edcd55366a32bc56949866b92428ee97c354d03841a74.af51a170-dfd5-4739-b6d6-198ab2e45306.c7000ccb-ee4e-4e20-8e28-adcfe08e3780.1778181748&srcmap=1#credentials" class="btn-s" target="_blank" rel="noopener noreferrer"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg><span data-l="en" class="on">Documents</span><span data-l="ru">Документы</span><span data-l="th" class="th-f">เอกสาร</span></a>
+    </div>
+    <div class="stats">
+      <div><div class="stat-n">258</div><div class="stat-l"><span data-l="en" class="on">Training Hours</span><span data-l="ru">Часов обучения</span><span data-l="th" class="th-f">ชั่วโมงฝึก</span></div></div>
+      <div><div class="stat-n">2+</div><div class="stat-l"><span data-l="en" class="on">Years Exp.</span><span data-l="ru">Года опыта</span><span data-l="th" class="th-f">ปีประสบการณ์</span></div></div>
+      <div><div class="stat-n">3</div><div class="stat-l"><span data-l="en" class="on">Certifications</span><span data-l="ru">Сертификата</span><span data-l="th" class="th-f">ใบรับรอง</span></div></div>
+    </div>
+  </div>
+  <div class="hi">
+    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/dc806015-258a-49c4-81d9-55af7b7be877" alt="Valery Lipin — Personal Trainer in Phuket" width="500" height="680" loading="eager" style="object-position:center top;">
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="alt">
+<div class="wrap ag">
+  <div class="aimg">
+    <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/c4e7dffb-9aef-4ec2-967f-c24deb085518.png" alt="Premium gym Phuket" width="560" height="480" loading="lazy">
+    <div class="abadge"><div class="abn">2026</div><div class="abl">Ready Now</div></div>
+  </div>
+  <div>
+    <div class="ey"><span data-l="en" class="on">About Me</span><span data-l="ru">О себе</span><span data-l="th" class="th-f">เกี่ยวกับฉัน</span></div>
+    <h2 class="st"><span data-l="en" class="on">Passionate Trainer<br>Ready for Phuket</span><span data-l="ru">Профессиональный тренер<br>готов к работе на Пхукете</span><span data-l="th" class="th-f">เทรนเนอร์มืออาชีพ<br>พร้อมทำงานที่ภูเก็ต</span></h2>
+    <p class="sb"><span data-l="en" class="on">Valery Lipin is a certified personal trainer and sports nutritionist from Saint Petersburg, permanently residing in Phuket. Available full-time at premium fitness clubs and 5★ SPA/wellness hotels. Open to Non-B visa and Work Permit sponsorship.</span><span data-l="ru">Валерий Липин — сертифицированный персональный тренер и спортивный нутрициолог из Санкт-Петербурга, постоянно проживающий на Пхукете. Готов к работе full-time в премиум фитнес-клубах и SPA/wellness 5★ отелей. Открыт к оформлению визы Non-B и Work Permit.</span><span data-l="th" class="th-f">วาเลรี ลีปิน เทรนเนอร์ส่วนตัวและนักโภชนาการกีฬาที่ได้รับการรับรองจากเซนต์ปีเตอร์สเบิร์ก พักอาศัยถาวรที่ภูเก็ต พร้อมทำงานเต็มเวลาในฟิตเนสคลับระดับพรีเมียมและโรงแรม SPA/wellness 5★ เปิดรับการสนับสนุนวีซ่า Non-B และใบอนุญาตทำงาน</span></p>
+    <p class="sb"><span data-l="en" class="on">I have hands-on experience at SportLife — one of Russia's leading fitness chains — working as a Personal Trainer delivering individual sessions, gym floor instruction, and client orientation. I specialise in strength training, bodybuilding methodology, and evidence-based sports nutrition.</span><span data-l="ru">Работал персональным тренером в SportLife — одной из ведущих сетей фитнес-клубов России. Проводил персональные тренировки, инструктаж и ориентацию новых членов клуба. Специализация: силовой тренинг, методология бодибилдинга, спортивное питание.</span><span data-l="th" class="th-f">มีประสบการณ์จริงที่ SportLife เครือฟิตเนสชั้นนำของรัสเซีย ทำงานเป็นเทรนเนอร์ส่วนตัว ฝึกสอนรายบุคคล แนะนำการใช้อุปกรณ์ เชี่ยวชาญด้านการฝึกความแข็งแกร่ง บอดี้บิลดิ้ง และโภชนาการกีฬา</span></p>
+    <div class="tags"><span class="tag">Strength Training</span><span class="tag">Bodybuilding</span><span class="tag">Sports Nutrition</span><span class="tag">Personal Training</span><span class="tag">Group Classes</span><span class="tag">Russian · English</span></div>
+    <a href="#contact" class="btn-p"><span data-l="en" class="on">Get in Touch</span><span data-l="ru">Связаться</span><span data-l="th" class="th-f">ติดต่อ</span></a>
+  </div>
+</div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+<div class="wrap">
+  <div style="text-align:center;margin-bottom:var(--s16)">
+    <div class="ey"><span data-l="en" class="on">What I Offer</span><span data-l="ru">Специализации</span><span data-l="th" class="th-f">บริการ</span></div>
+    <h2 class="st"><span data-l="en" class="on">Services</span><span data-l="ru">Услуги</span><span data-l="th" class="th-f">บริการของฉัน</span></h2>
+  </div>
+  <div class="sg">
+    <div class="sc"><div class="si">🏋️</div><h3><span data-l="en" class="on">Personal Training</span><span data-l="ru">Персональные тренировки</span><span data-l="th" class="th-f">เทรนนิ่งส่วนตัว</span></h3><p><span data-l="en" class="on">Individualised strength &amp; conditioning programs tailored to each client's goals — from fat loss and body recomposition to muscle building and athletic performance.</span><span data-l="ru">Индивидуальные программы силовой подготовки под цели клиента: жиросжигание, рекомпозиция тела, набор мышечной массы, улучшение спортивных показателей.</span><span data-l="th" class="th-f">โปรแกรมออกกำลังกายส่วนตัวที่ปรับแต่งตามเป้าหมายลูกค้า ตั้งแต่ลดไขมัน เปลี่ยนสัดส่วนร่างกาย สร้างกล้ามเนื้อ</span></p></div>
+    <div class="sc"><div class="si">🥗</div><h3><span data-l="en" class="on">Sports Nutrition</span><span data-l="ru">Спортивная нутрициология</span><span data-l="th" class="th-f">โภชนาการกีฬา</span></h3><p><span data-l="en" class="on">Evidence-based nutrition planning: macronutrient calculation, meal plan design, and supplementation guidance. Certified Sports Nutritionist with 258+ hours of formal training.</span><span data-l="ru">Составление планов питания: расчёт КБЖУ, рацион под цели, рекомендации по добавкам. Сертифицированный спортивный нутрициолог с 258+ часами подготовки.</span><span data-l="th" class="th-f">การวางแผนโภชนาการ: คำนวณมาโคร ออกแบบเมนูอาหาร แนะนำอาหารเสริม โดยนักโภชนาการกีฬาที่ผ่านการรับรอง</span></p></div>
+    <div class="sc"><div class="si">👥</div><h3><span data-l="en" class="on">Group &amp; Floor Instruction</span><span data-l="ru">Групповые и зальные занятия</span><span data-l="th" class="th-f">ฝึกกลุ่มและแนะนำในยิม</span></h3><p><span data-l="en" class="on">Gym floor instruction, equipment orientation, and group training sessions. Experience with expat and tourist clients. Morning &amp; daytime availability.</span><span data-l="ru">Инструктаж в зале, ориентация по оборудованию, групповые тренировки. Опыт с иностранными клиентами. График: утро и день.</span><span data-l="th" class="th-f">แนะนำการใช้อุปกรณ์ ต้อนรับสมาชิกใหม่ ฝึกกลุ่ม มีประสบการณ์กับชาวต่างชาติและนักท่องเที่ยว</span></p></div>
+  </div>
+</div>
+</section>
+
+<!-- CREDENTIALS -->
+<section id="credentials" class="alt">
+<div class="wrap">
+  <div class="ey"><span data-l="en" class="on">Education &amp; Certifications</span><span data-l="ru">Образование и сертификаты</span><span data-l="th" class="th-f">การศึกษาและใบรับรอง</span></div>
+  <h2 class="st" style="margin-bottom:var(--s12)"><span data-l="en" class="on">Verified Credentials</span><span data-l="ru">Подтверждённые документы</span><span data-l="th" class="th-f">เอกสารรับรองที่ตรวจสอบแล้ว</span></h2>
+  <div class="cg">
+    <div class="cc">
+      <div class="ciw"><img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/7be694ad-d660-4dca-bf16-8c18bf06efcd" alt="Professional Retraining Diploma Fitness Trainer" width="400" height="210" loading="lazy"></div>
+      <div class="ci">
+        <span class="cbadge"><span data-l="en" class="on">Diploma</span><span data-l="ru">Диплом</span><span data-l="th" class="th-f">ประกาศนียบัตร</span></span>
+        <div class="ct"><span data-l="en" class="on">Professional Retraining: Fitness Trainer</span><span data-l="ru">Проф. переподготовка: Тренер по фитнесу</span><span data-l="th" class="th-f">การฝึกอบรมวิชาชีพ: เทรนเนอร์ฟิตเนส</span></div>
+        <div class="ciss">School of Fitness &amp; Bodybuilding, Pavel Ershov · Lic. No. 1125</div>
+        <div class="cdt"><span data-l="en" class="on">Issued: 15 Feb 2026 · 258 hours · Reg. 938/ПТ · Saint Petersburg</span><span data-l="ru">Выдан: 15.02.2026 · 258 часов · Рег. 938/ПТ · Санкт-Петербург</span><span data-l="th" class="th-f">ออกให้: 15 ก.พ. 2569 · 258 ชั่วโมง · เลขทะเบียน 938/ПТ</span></div>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="ciw"><img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/f9f3edb9-3d46-4a68-a6e0-f6d8c310e4a7" alt="Sports Nutritionist Certificate" width="400" height="210" loading="lazy"></div>
+      <div class="ci">
+        <span class="cbadge"><span data-l="en" class="on">Certificate</span><span data-l="ru">Сертификат</span><span data-l="th" class="th-f">ใบรับรอง</span></span>
+        <div class="ct"><span data-l="en" class="on">Sports Nutritionist</span><span data-l="ru">Спортивный нутрициолог</span><span data-l="th" class="th-f">นักโภชนาการกีฬา</span></div>
+        <div class="ciss">School of Fitness &amp; Bodybuilding, Pavel Ershov · Lic. No. 1125</div>
+        <div class="cdt"><span data-l="en" class="on">Issued: 9 Feb 2026 · Saint Petersburg</span><span data-l="ru">Выдан: 09.02.2026 · Санкт-Петербург</span><span data-l="th" class="th-f">ออกให้: 9 ก.พ. 2569 · เซนต์ปีเตอร์สเบิร์ก</span></div>
+      </div>
+    </div>
+    <div class="cc">
+      <div class="ciw"><img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/0da9898e-14c9-4d1c-8af6-fd2f9fb7d102" alt="SportLife Employee Badge Personal Trainer" width="400" height="210" loading="lazy"></div>
+      <div class="ci">
+        <span class="cbadge"><span data-l="en" class="on">Employment</span><span data-l="ru">Трудоустройство</span><span data-l="th" class="th-f">การจ้างงาน</span></span>
+        <div class="ct"><span data-l="en" class="on">Personal Trainer — SportLife</span><span data-l="ru">Персональный тренер — SportLife</span><span data-l="th" class="th-f">เทรนเนอร์ส่วนตัว — SportLife</span></div>
+        <div class="ciss">SportLife Fitness Club Network · Saint Petersburg, Russia</div>
+        <div class="cdt"><span data-l="en" class="on">Official employee badge · Gym Floor &amp; Instruction · 07:00–10:00</span><span data-l="ru">Официальный бейдж · Тренажёрный зал &amp; Инструктаж · 07:00–10:00</span><span data-l="th" class="th-f">บัตรพนักงานอย่างเป็นทางการ · ยิมและการสอน · 07:00–10:00</span></div>
+      </div>
+    </div>
+  </div>
+  <div style="background:var(--surfoff);border:1px solid var(--brd);border-radius:var(--r16);padding:var(--s6) var(--s8);display:flex;align-items:center;gap:var(--s4)">
+    <div style="font-size:28px;flex-shrink:0">📋</div>
+    <div>
+      <div style="font-size:var(--sm);font-weight:700;color:var(--txt);margin-bottom:var(--s1)"><span data-l="en" class="on">All originals available with apostille &amp; certified English translation upon request</span><span data-l="ru">Оригиналы документов с апостилем и нотариально заверенным переводом на английский по запросу</span><span data-l="th" class="th-f">เอกสารต้นฉบับทั้งหมดพร้อมอะปอสตีลและการแปลภาษาอังกฤษที่ผ่านการรับรองตามคำขอ</span></div>
+      <div style="font-size:var(--xs);color:var(--txtm)">Institution licensed by Russian Federation Ministry of Education · License No. 1125, issued 26 Aug 2014</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- WORK EXPERIENCE -->
+<section id="work" class="alt" style="background:var(--surf)">
+<div class="wrap wg">
+  <div>
+    <div class="ey"><span data-l="en" class="on">Work Experience</span><span data-l="ru">Опыт работы</span><span data-l="th" class="th-f">ประสบการณ์ทำงาน</span></div>
+    <h2 class="st"><span data-l="en" class="on">Professional History</span><span data-l="ru">Профессиональная история</span><span data-l="th" class="th-f">ประวัติการทำงาน</span></h2>
+    <div class="tl">
+      <div class="tli">
+        <div class="tlm"><div class="tld"></div><div class="tll"></div></div>
+        <div style="padding-bottom:var(--s4)">
+          <div class="tldate"><span data-l="en" class="on">2025 – Present</span><span data-l="ru">2025 – наст. время</span><span data-l="th" class="th-f">2568 – ปัจจุบัน</span></div>
+          <div class="tlrole"><span data-l="en" class="on">Personal Trainer</span><span data-l="ru">Персональный тренер</span><span data-l="th" class="th-f">เทรนเนอร์ส่วนตัว</span></div>
+          <div class="tlco">SportLife Fitness Club · Saint Petersburg, Russia</div>
+          <div class="tldesc"><span data-l="en" class="on">Delivering personal training sessions, gym floor instruction and client orientation. Morning schedule 07:00–10:00. Official employment record available for visa application purposes.</span><span data-l="ru">Персональные тренировки, инструктаж в зале, ориентация для новых членов клуба. График 07:00–10:00. Официальная трудовая книжка в наличии для визовых документов.</span><span data-l="th" class="th-f">เทรนนิ่งส่วนตัว แนะนำการใช้อุปกรณ์ ต้อนรับสมาชิกใหม่ ตารางงานเช้า 07:00–10:00 มีเอกสารการจ้างงานอย่างเป็นทางการสำหรับการยื่นวีซ่า</span></div>
+        </div>
+      </div>
+      <div class="tli">
+        <div class="tlm"><div class="tld" style="background:var(--txtf)"></div></div>
+        <div>
+          <div class="tldate"><span data-l="en" class="on">February 2026</span><span data-l="ru">Февраль 2026</span><span data-l="th" class="th-f">กุมภาพันธ์ 2569</span></div>
+          <div class="tlrole"><span data-l="en" class="on">Certified: Fitness Trainer &amp; Sports Nutritionist</span><span data-l="ru">Диплом: Тренер по фитнесу + Спортивный нутрициолог</span><span data-l="th" class="th-f">ผ่านการรับรอง: เทรนเนอร์ฟิตเนส &amp; นักโภชนาการกีฬา</span></div>
+          <div class="tlco">School of Fitness &amp; Bodybuilding, Pavel Ershov · Saint Petersburg</div>
+          <div class="tldesc"><span data-l="en" class="on">Completed 258-hour professional retraining programme with final assessment by examination board. Simultaneously awarded Sports Nutritionist certificate.</span><span data-l="ru">Завершил 258-часовую программу профессиональной переподготовки с итоговой аттестацией перед экзаменационной комиссией. Одновременно получен сертификат спортивного нутрициолога.</span><span data-l="th" class="th-f">ผ่านโปรแกรมฝึกอบรมวิชาชีพ 258 ชั่วโมงพร้อมการประเมินผลโดยคณะกรรมการสอบ พร้อมกันนั้นยังได้รับใบรับรองนักโภชนาการกีฬา</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wphoto">
+    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/848409f1-6e32-43e9-ba95-fb22f08e7ba1" alt="Valery Lipin at SportLife schedule screen" width="560" height="480" loading="lazy">
+  </div>
+</div>
+</section>
+
+<!-- VISA SECTION -->
+<section id="visa" style="background:var(--surf2);border-top:1px solid var(--div);border-bottom:1px solid var(--div)">
+<div class="wrap vi">
+  <div>
+    <div class="ey"><span data-l="en" class="on">For Employers</span><span data-l="ru">Для работодателей</span><span data-l="th" class="th-f">สำหรับนายจ้าง</span></div>
+    <h2 class="st"><span data-l="en" class="on">Non-B Visa &amp;<br>Work Permit Ready</span><span data-l="ru">Готов к оформлению<br>Non-B + Work Permit</span><span data-l="th" class="th-f">พร้อมสำหรับวีซ่า Non-B<br>และใบอนุญาตทำงาน</span></h2>
+    <p class="sb"><span data-l="en" class="on">All personal documents required for a Thai Non-B work visa and work permit application are ready. I need the employer to sponsor the process — which is the standard procedure for legally hiring foreign fitness professionals in Thailand.</span><span data-l="ru">Все личные документы для получения визы Non-B и Work Permit готовы. Требуется спонсорство со стороны работодателя — стандартная процедура официального найма иностранных фитнес-специалистов в Таиланде.</span><span data-l="th" class="th-f">เอกสารส่วนตัวทั้งหมดสำหรับวีซ่า Non-B และใบอนุญาตทำงานพร้อมแล้ว ต้องการนายจ้างสนับสนุนกระบวนการ ซึ่งเป็นขั้นตอนมาตรฐานสำหรับการจ้างผู้เชี่ยวชาญด้านฟิตเนสต่างชาติอย่างถูกกฎหมายในประเทศไทย</span></p>
+    <ul class="vcl">
+      <li><div class="chk">✓</div><span><span data-l="en" class="on">Valid passport (6+ months validity)</span><span data-l="ru">Загранпаспорт (срок 6+ месяцев)</span><span data-l="th" class="th-f">หนังสือเดินทางที่ยังมีผลใช้งาน (6+ เดือน)</span></span></li>
+      <li><div class="chk">✓</div><span><span data-l="en" class="on">Diploma with apostille + certified English translation</span><span data-l="ru">Диплом с апостилем + нотариальный перевод на английский</span><span data-l="th" class="th-f">ประกาศนียบัตรพร้อมอะปอสตีลและการแปลภาษาอังกฤษที่รับรอง</span></span></li>
+      <li><div class="chk">✓</div><span><span data-l="en" class="on">Criminal record clearance with apostille</span><span data-l="ru">Справка о несудимости с апостилем</span><span data-l="th" class="th-f">หนังสือรับรองความประพฤติพร้อมอะปอสตีล</span></span></li>
+      <li><div class="chk">✓</div><span><span data-l="en" class="on">Bank statement 6 months (min. 20,000 THB)</span><span data-l="ru">Выписка из банка 6 мес. (мин. 20 000 THB)</span><span data-l="th" class="th-f">ใบแสดงยอดเงินในบัญชี 6 เดือน (ขั้นต่ำ 20,000 บาท)</span></span></li>
+      <li><div class="chk">✓</div><span><span data-l="en" class="on">Employment history from SportLife (official record)</span><span data-l="ru">История трудоустройства в SportLife (трудовая книжка)</span><span data-l="th" class="th-f">ประวัติการทำงานจาก SportLife (บันทึกอย่างเป็นทางการ)</span></span></li>
+    </ul>
+  </div>
+  <div class="vh">
+    <div class="vht"><span data-l="en" class="on">Employer Provides:</span><span data-l="ru">Работодатель предоставляет:</span><span data-l="th" class="th-f">นายจ้างต้องจัดเตรียม:</span></div>
+    <p class="vhs"><span data-l="en" class="on">Standard documents to sponsor a Non-B visa &amp; work permit for a foreign trainer in Thailand:</span><span data-l="ru">Стандартный пакет документов для спонсорства визы Non-B и Work Permit иностранного тренера в Таиланде:</span><span data-l="th" class="th-f">เอกสารมาตรฐานสำหรับสนับสนุนวีซ่า Non-B และใบอนุญาตทำงานสำหรับเทรนเนอร์ต่างชาติในประเทศไทย:</span></p>
+    <ul class="vhl">
+      <li><span data-l="en" class="on">Official job offer letter (position, salary, start date)</span><span data-l="ru">Официальный оффер (должность, зарплата, дата начала)</span><span data-l="th" class="th-f">หนังสือเสนองานอย่างเป็นทางการ</span></li>
+      <li><span data-l="en" class="on">Company registration certificate (DBD, Thailand)</span><span data-l="ru">Свидетельство о регистрации компании (DBD Таиланд)</span><span data-l="th" class="th-f">หนังสือรับรองบริษัท (กรมพัฒนาธุรกิจการค้า)</span></li>
+      <li><span data-l="en" class="on">Work permit application to Dept. of Employment</span><span data-l="ru">Заявление на Work Permit в Департамент занятости</span><span data-l="th" class="th-f">คำขอใบอนุญาตทำงานถึงกรมการจัดหางาน</span></li>
+      <li><span data-l="en" class="on">Business / fitness club operating license</span><span data-l="ru">Лицензия на деятельность фитнес-клуба</span><span data-l="th" class="th-f">ใบอนุญาตประกอบกิจการฟิตเนสคลับ</span></li>
+      <li><span data-l="en" class="on">VAT registration certificate (PP.20)</span><span data-l="ru">Сертификат плательщика НДС (PP.20)</span><span data-l="th" class="th-f">ใบทะเบียนภาษีมูลค่าเพิ่ม (ภ.พ.20)</span></li>
+    </ul>
+  </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="alt">
+<div class="wrap cog">
+  <div>
+    <div class="ey"><span data-l="en" class="on">Contact</span><span data-l="ru">Контакт</span><span data-l="th" class="th-f">ติดต่อ</span></div>
+    <h2 class="st"><span data-l="en" class="on">Contact Valery</span><span data-l="ru">Написать Валерию</span><span data-l="th" class="th-f">ติดต่อวาเลรี่</span></h2>
+    <p class="sb"><span data-l="en" class="on">Available for full-time positions at premium fitness clubs and wellness resorts in Phuket. Seeking employers willing to sponsor Non-B visa and work permit.</span><span data-l="ru">Открыт для предложений о постоянной работе в премиальных фитнес-клубах и велнес-резортах Пхукета. Ищу клуб, готовый оформить визу Non-B и Work Permit.</span><span data-l="th" class="th-f">รับตำแหน่งเต็มเวลาในฟิตเนสคลับและรีสอร์ตสุขภาพระดับพรีเมียมในภูเก็ต ต้องการนายจ้างที่พร้อมสนับสนุนวีซ่า Non-B และใบอนุญาตทำงาน</span></p>
+    <div class="coin"><div class="coic">📱</div><div><div class="colk">WhatsApp / Telegram</div><div class="colv"><span data-l="en" class="on">+7 911 973-46-42</span><span data-l="ru">+7 911 973-46-42</span><span data-l="th" class="th-f">+7 911 973-46-42</span></div></div></div>
+    <div class="coin"><div class="coic">📍</div><div><div class="colk"><span data-l="en" class="on">Location</span><span data-l="ru">Местонахождение</span><span data-l="th" class="th-f">ที่ตั้ง</span></div><div class="colv"><span data-l="en" class="on">Phuket, Thailand (residing)</span><span data-l="ru">Пхукет, Таиланд (проживает)</span><span data-l="th" class="th-f">ภูเก็ต ประเทศไทย (พักอาศัยอยู่)</span></div></div></div>
+    <div class="coin"><div class="coic">🌐</div><div><div class="colk"><span data-l="en" class="on">Languages</span><span data-l="ru">Языки</span><span data-l="th" class="th-f">ภาษา</span></div><div class="colv"><span data-l="en" class="on">Russian (native) · English (working)</span><span data-l="ru">Русский (родной) · Английский (рабочий)</span><span data-l="th" class="th-f">รัสเซีย (ภาษาแม่) · อังกฤษ (ระดับทำงาน)</span></div></div></div>
+  </div>
+  <div class="cfn">
+    <h3 style="font-size:var(--xl);font-weight:900;color:var(--txt);margin-bottom:var(--s4)"><span data-l="en" class="on">For Fitness Clubs</span><span data-l="ru">Для фитнес-клубов</span><span data-l="th" class="th-f">สำหรับฟิตเนสคลับ</span></h3>
+    <p style="font-size:var(--sm);color:var(--txtm);line-height:1.7;margin-bottom:var(--s6)"><span data-l="en" class="on">If you are interested in hiring Valery as a Personal Trainer or Fitness Instructor, please get in touch via WhatsApp or Telegram with:</span><span data-l="ru">Если вы хотите нанять Валерия в качестве персонального тренера или инструктора, напишите в WhatsApp или Telegram, указав:</span><span data-l="th" class="th-f">หากต้องการจ้างวาเลรี่เป็นเทรนเนอร์ส่วนตัวหรือผู้สอนฟิตเนส โปรดติดต่อผ่าน WhatsApp หรือ Telegram พร้อมข้อมูล:</span></p>
+    <ul style="list-style:none;display:flex;flex-direction:column;gap:var(--s4)">
+      <li style="display:flex;gap:var(--s3);align-items:flex-start;font-size:var(--sm);color:var(--txtm)"><span style="color:var(--gold);font-weight:700;flex-shrink:0;font-family:var(--fd)">01</span><span><span data-l="en" class="on">Club name, area in Phuket, and position title</span><span data-l="ru">Название клуба, район на Пхукете, должность</span><span data-l="th" class="th-f">ชื่อคลับ เขตในภูเก็ต และตำแหน่งงาน</span></span></li>
+      <li style="display:flex;gap:var(--s3);align-items:flex-start;font-size:var(--sm);color:var(--txtm)"><span style="color:var(--gold);font-weight:700;flex-shrink:0;font-family:var(--fd)">02</span><span><span data-l="en" class="on">Salary range and whether Non-B visa sponsorship is possible</span><span data-l="ru">Вилка зарплаты и готовность к оформлению визы Non-B</span><span data-l="th" class="th-f">ช่วงเงินเดือนและความเป็นไปได้ในการสนับสนุนวีซ่า Non-B</span></span></li>
+      <li style="display:flex;gap:var(--s3);align-items:flex-start;font-size:var(--sm);color:var(--txtm)"><span style="color:var(--gold);font-weight:700;flex-shrink:0;font-family:var(--fd)">03</span><span><span data-l="en" class="on">Desired start date and working hours</span><span data-l="ru">Желаемая дата начала и рабочий график</span><span data-l="th" class="th-f">วันเริ่มงานที่ต้องการและชั่วโมงทำงาน</span></span></li>
+    </ul>
+    <div style="margin-top:var(--s8);display:flex;gap:var(--s3);flex-wrap:wrap">
+      <a href="https://wa.me/79119734642" target="_blank" rel="noopener noreferrer" class="btn-p" style="flex:1;justify-content:center;min-width:120px">WhatsApp</a>
+      <a href="https://t.me/+79119734642" target="_blank" rel="noopener noreferrer" class="btn-s" style="flex:1;justify-content:center;min-width:120px">Telegram</a>
+    </div>
+  </div>
+</div>
+</section>
+
+</main>
+
+<footer>
+<div class="fi">
+  <span class="fc"><span data-l="en" class="on">© 2026 Valery Lipin — Personal Trainer · Phuket, Thailand</span><span data-l="ru">© 2026 Валерий Липин — Персональный тренер · Пхукет, Таиланд</span><span data-l="th" class="th-f">© 2569 วาเลรี่ ลิปิน — เทรนเนอร์ส่วนตัว · ภูเก็ต ประเทศไทย</span></span>
+  <div class="lang-sw">
+    <button class="lb on" onclick="setL('en')">EN</button>
+    <button class="lb" onclick="setL('ru')">RU</button>
+    <button class="lb" onclick="setL('th')">TH</button>
+  </div>
+</div>
+</footer>
+
+<script>
+let cl='en';
+function setL(l){
+  cl=l;
+  document.querySelectorAll('[data-l]').forEach(e=>e.classList.toggle('on',e.dataset.l===l));
+  document.querySelectorAll('.lb').forEach(b=>b.classList.toggle('on',b.textContent===l.toUpperCase()));
+  document.documentElement.lang=l==='th'?'th':l==='ru'?'ru':'en';
+}
+const mt=document.getElementById('mt'),nl=document.getElementById('nl');
+mt.addEventListener('click',()=>{const o=nl.classList.toggle('open');mt.setAttribute('aria-expanded',o)});
+nl.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nl.classList.remove('open');mt.setAttribute('aria-expanded','false')}));
+const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity='1';e.target.style.transform='translateY(0)';io.unobserve(e.target)}})},{threshold:.07});
+document.querySelectorAll('section,.cc,.sc,.tli').forEach(el=>{el.style.opacity='0';el.style.transform='translateY(20px)';el.style.transition='opacity .6s ease,transform .6s ease';io.observe(el)});
+window.addEventListener('scroll',()=>{const ss=document.querySelectorAll('section[id]');let cur='';ss.forEach(s=>{if(window.scrollY>=s.offsetTop-110)cur=s.id});document.querySelectorAll('[data-n]').forEach(a=>a.classList.toggle('cur',a.dataset.n===cur))},{passive:true});
+</script>
+</body>
+</html>
